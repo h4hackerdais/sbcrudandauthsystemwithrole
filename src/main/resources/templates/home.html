@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="">
+    <input type="text">
+</form>
+
+
+<div th:each="list : ${lists}">
+    <p th:text="${list.name}"></p>
+    <p th:text="${list.author}"></p>
+
+</div>
+
+</p>
+</body>
+</html>

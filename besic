@@ -1,0 +1,51 @@
+What is Web service?
+ Service delivered over the web?
+ Software system designed to support
+ interoperable machine-to-machine
+ interaction over a network
+
+ * Designed for machine-to-machine (or application-to-application) interaction
+ * Should be interoperable - not platform dependent
+ * Should allow communication over a network
+
+How does data exchange between applications take place?
+
+
+tip
+SoaP and Rest are not really comparable
+Rest defines an architectural approach
+Whereas Soap poses restrictions on the format of xml which is exchanged between your service provider and the service consumer
+
+Soap stands for Simple Object Access Protocol
+Important thing is soap defines a specific xml request and structure
+if you're using soap then you have to use this structure.
+you have to create soap envelope which contains a soap header and a soap body.
+the header contains meta information like authentication, authorization, signatures and thinks like that.
+body is where you really put the real content of your request or your response.
+* soap XML REQUEST and soap XML RESPONSE.
+* Transport soap over MQ or soap over HTTP
+* service definition WSDL stands for web service definition language
+
+xsd -> stands for -> xml schema definition
+
+
+
+tip
+Rest sands for REpresentational state transfer
+which is coined by ROY FIELDING if you remember, ROY FIELDING is the guy who also developed HTTP PROTOCOL.
+make best use of http
+http methods (get, put, post..)
+http status (200, 404)
+
+http stands for -> hyper text transfer protocol
+
+url stands for -> uniform Resource identifier
+a resource can have different representations -> xml, html, json
+
+Rest
+* Data exchange format
+    No Restriction.json is popular
+* Transport
+    Only http
+* Service Definition
+    No Standard.WADL/swagger/..
